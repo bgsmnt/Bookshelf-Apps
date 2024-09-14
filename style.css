@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: white;
+  }
+  
+  main {
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+  }
+  
+  .input_section, .book_shelf {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+      .input_section {
+     max-width: 100%;
+     margin: 0 auto;
+     background-color: white;
+     border-radius: 12px;
+     padding: 2rem;
+     margin-bottom: 2rem;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+     transition: all 0.3s ease;
+}
+
+.input_section form {
+     padding: 0;
+}
+
+.input_section h2 {
+     color: var(--primary-color);
+     font-size: 1.4rem;
+     margin-bottom: 1rem;
+}
+  .input_section .input {
+    margin-bottom: 1rem;
+  }
+  
+  .input_section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .input_section input[type="text"],
+  .input_section input[type="number"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input_section input[type="text"]:focus,
+  .input_section input[type="number"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .input_section .input_inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input_section .input_inline label {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+  
+  #bookSubmit {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  #bookSubmit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  .book_item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .book_item:hover {
+    transform: translateY(-5px) rotate(1deg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+  
+  .book_item h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .action button {
+    margin-right: 0.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  @media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    main {
+      width: 80%;
+      padding-right: 50px;
+    }
+  
+    .input_section, .book_shelf {
+      padding: 1.5rem;
+    }
+  
+    .book_item {
+      padding: 1rem;
+    }
+  
+    .book_item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .action {
+      flex-direction: column;
+    }
+  
+    .action button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
